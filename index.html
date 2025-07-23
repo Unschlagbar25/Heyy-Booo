@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Heyyy Booo </title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      height: 100vh;
+      background: url('background.jpg') center center / cover no-repeat fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      color: #fff;
+    }
+body::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* gentle dark overlay, no blur */
+  z-index: 0;
+}
+
+
+    .content {
+      position: relative;
+      z-index: 1;
+      max-width: 90%;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2.85rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .line {
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
+      font-weight: 450;
+    }
+
+    .quote {
+  font-size: 1.35rem;
+  font-weight: 450;
+  color: #f8f8f8;
+  margin-top: 1.5rem;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+
+    @media (max-width: 600px) {
+     h1 {
+  color: #fffbe6; /* soft golden white */
+}
+
+.line {
+  color: #ffecd1; /* warm light peach */
+}
+
+.quote {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+    }
+    @keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.content {
+  animation: fadeInUp 1.5s ease-out;
+}
+
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1>Good Morning Gorgeousss ♥️</h1>
+    <div class="line">You look so good when you smile like this </div>
+    <div class="quote">Have a great day Booo. You deserve nothing less.<br> Own the day like you own that smile.<br>🫶🏻✨ </div>
+  </div>
+</body>
+</html>
