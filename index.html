@@ -6,7 +6,13 @@
   <title>Heyyy Booo </title>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    * {
+    html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+* {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -15,7 +21,11 @@
     body {
       font-family: 'Quicksand', sans-serif;
       height: 100vh;
-      background: url('background.jpg') center center / cover no-repeat fixed;
+      background: url('background.jpg') center center / cover no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+
       display: flex;
       justify-content: center;
       align-items: center;
@@ -85,6 +95,11 @@ body::before {
 
 .content {
   animation: fadeInUp 1.5s ease-out;
+}
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll; /* fixes background jump on mobile Chrome */
+  }
 }
 
   </style>
